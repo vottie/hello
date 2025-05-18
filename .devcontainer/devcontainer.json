@@ -1,0 +1,13 @@
+{
+  "name": "Next.js Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/usr/bin/zsh"
+  },
+  "postCreateCommand": "npm install -g npm@latest && npx create-next-app@latest . --use-npm --ts --eslint --app --src-dir --import-alias @/* || true",
+  "forwardPorts": [3000],
+  "features": {},
+  "remoteUser": "root"
+} 
